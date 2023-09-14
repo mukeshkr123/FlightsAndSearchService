@@ -1,0 +1,17 @@
+{
+  "name": "airline-management-system",
+  "version": "1.0.0",
+  "description": "Micro service for handling  flight crud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mukesh kumar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
