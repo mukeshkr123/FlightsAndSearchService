@@ -15,7 +15,7 @@ class CityService {
     }
   }
 
-  async deletCity(cityId) {
+  async deleteCity(cityId) {
     try {
       const city = await this.cityRepository.deletecity(cityId);
       return city;
