@@ -29,3 +29,13 @@ Once you have added db config listed above , go tot the src folder from your ter
 - Airplane Table
 - Flight
 - Airport
+
+## Tables
+
+## City -> id, name, created_at, updated_at,
+
+## Airport -> id , name , address, city_id, created_at, updated_at
+
+(npx sequelize model:generate --name Airpot --attributes name:String,address:String,cityId:integer)
+
+     Relationship -> City has many airports and Airpot belongs to a city
