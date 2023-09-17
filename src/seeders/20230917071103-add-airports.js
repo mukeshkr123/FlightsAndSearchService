@@ -12,31 +12,30 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
      */
-
     await queryInterface.bulkInsert(
       "Airports",
       [
         {
           name: "Kempegowda International Airport",
-          cityId: 4,
+          cityId: 8,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: "Mysuru Airport",
-          cityId: 4,
+          cityId: 17,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: "Mengaluru International Airport",
-          cityId: 4,
+          cityId: 8,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: "Indira Gandhi International Airport",
-          cityId: 2,
+          cityId: 17,
           createdAt: new Date(),
           updatedAt: new Date(),
         },

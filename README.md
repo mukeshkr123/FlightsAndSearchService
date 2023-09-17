@@ -36,6 +36,6 @@ Once you have added db config listed above , go tot the src folder from your ter
 
 ## Airport -> id , name , address, city_id, created_at, updated_at
 
-(npx sequelize model:generate --name Airpot --attributes name:String,address:String,cityId:integer)
+(npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer)
 
      Relationship -> City has many airports and Airpot belongs to a city
