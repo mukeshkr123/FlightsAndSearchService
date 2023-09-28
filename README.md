@@ -46,3 +46,13 @@ Once you have added db config listed above , go tot the src folder from your ter
 
 ==> seeding data
 `npx sequelize db:seed:all`
+
+## Airplane
+
+==> creating airplane model
+`npx sequelize model:generate --name Airplane --attributes modelNumber:String,capacity:integer  
+`
+then => `npx sequelize db:migrate`
+
+==> creating seed file `npx sequelize seed:generate --name "add-airplanes"`
+==. seeding file `npx sequelize db:seed:all`
