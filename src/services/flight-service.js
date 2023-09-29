@@ -1,5 +1,5 @@
 const { FlightRepository, AirplaneRepository } = require("../repository/index");
-const compareTime = require("../utils/helper");
+const { compareTime } = require("../utils/helper");
 
 class FlightService {
   constructor() {
@@ -21,6 +21,15 @@ class FlightService {
       });
 
       return flight;
+    } catch (error) {
+      console.log("Something went wrong in service layer");
+      throw { error };
+    }
+  }
+  async getAllFlightData(data) {
+    try {
+      const flights = await this.flightRepository.getAllFlights(data);
+      return flights;
     } catch (error) {
       console.log("Something went wrong in service layer");
       throw { error };
