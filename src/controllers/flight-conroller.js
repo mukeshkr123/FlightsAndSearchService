@@ -1,4 +1,5 @@
 const { FlightService } = require("../services/index.js");
+const { SuccesCodes } = require("../utils/enums-codes.js");
 const flightService = new FlightService();
 
 const create = async (req, res) => {
@@ -13,7 +14,7 @@ const create = async (req, res) => {
       boardingGate: req.body.boardingGate,
     };
     const flight = await flightService.createFlight(flightRequestData);
-    return res.status(201).json({
+    return res.status(SuccesCodes.CREATED).json({
       data: flight,
       success: true,
       message: "Successfully created a flight",
@@ -33,7 +34,7 @@ const create = async (req, res) => {
 const getAll = async (req, res) => {
   try {
     const response = await flightService.getAllFlightData(req.query);
-    return res.status(201).json({
+    return res.status(SuccesCodes.OK).json({
       data: response,
       success: true,
       message: "Successfully fetched the  flights",
